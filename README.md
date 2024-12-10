@@ -88,11 +88,13 @@ endmodule
 developed by:jayachitra.j RegisterNumber:24900897
 
 **RTL Schematic**
+
 ![Screenshot 2024-12-10 105324](https://github.com/user-attachments/assets/f81ef287-85a2-4f42-9e18-5506b0028b43)
 
 ![Screenshot 2024-12-10 105339](https://github.com/user-attachments/assets/14f6715d-c37c-45c6-84b7-449d7f5f6547)
 
 **Output Timing Waveform**
+
 ![Screenshot 2024-12-10 105420](https://github.com/user-attachments/assets/58c7139b-736b-4480-9d01-4ad5cee01f34)
 
 ![Screenshot 2024-12-10 105450](https://github.com/user-attachments/assets/cd93b32e-52fc-4dad-a9a9-04ac55d63f06)
