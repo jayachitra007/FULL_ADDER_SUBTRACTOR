@@ -38,18 +38,65 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
+
 **Procedure**
 
 Write the detailed procedure here
 
 **Program:**
+```
+module EXP04(sum,cout,a,b,cin);
+output sum;
+output cout;
+input a;
+input b;
+input cin;
+wire s1,c1,c2;
+xor(s1,a,b);
+and(c1,a,b);
+xor(sum,s1,cin);
+and(c2,s1,cin);
+or(cout,c2,c1);
+endmodule
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+FULL SUBTRACTOR
+output cout;
+input a;
+input b;
+input cin;
+wire s1,c1,c2;
+xor(s1,a,b);
+and(c1,a,b);
+xor(sum,s1,cin);
+and(c2,s1,cin);
+or(cout,c2,c1);
+endmodule
+module EXP04 (df,bo,a,b,bin);
+output df;
+output bo;
+input a;
+input b;
+input bin;
+wire w1,w2,w3;
+assign w1=a^b;
+assign w2=(~a&b);
+assign w3=(~w1&bin);
+assign df=w1^bin;
+assign bo=w2|w3;
+endmodule
+```
+developed by:jayachitra.j RegisterNumber:24900897
 
 **RTL Schematic**
+![Screenshot 2024-12-10 105324](https://github.com/user-attachments/assets/f81ef287-85a2-4f42-9e18-5506b0028b43)
+
+![Screenshot 2024-12-10 105339](https://github.com/user-attachments/assets/14f6715d-c37c-45c6-84b7-449d7f5f6547)
 
 **Output Timing Waveform**
+![Screenshot 2024-12-10 105420](https://github.com/user-attachments/assets/58c7139b-736b-4480-9d01-4ad5cee01f34)
+
+![Screenshot 2024-12-10 105450](https://github.com/user-attachments/assets/cd93b32e-52fc-4dad-a9a9-04ac55d63f06)
+
 
 **Result:**
 
